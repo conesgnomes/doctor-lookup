@@ -1,7 +1,7 @@
 var Doctor = require('./../js/scripts.js').doctorModule;
 
-var name = function(name) {
-  $('.result').append("<p><strong>Doctor: " + name + "</strong></p>");
+var clinics = function(clinics) {
+  $('.result').append("<p><strong>Offices: " + clinics + "</strong></p>");
 };
 
 $(function() {
@@ -13,7 +13,7 @@ $(function() {
     searchInput = $('#issue-search').val();
     $('#issue-search').val('');
 
-    newDoctor.getDoctors(searchInput, name);
+    newDoctor.getDoctors(searchInput, clinics);
 
   });
 });
