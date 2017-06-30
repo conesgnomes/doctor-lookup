@@ -4,21 +4,35 @@
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="build/css/vendor.css"> UNCOMMENT IF YOU INSTALL ANY CSS COMPONENTS WITH BOWER -->
     <link rel="stylesheet" href="build/css/main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:300,400,700" rel="stylesheet">
     <script type="text/javascript" src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Doctor Lookup</title>
   </head>
   <body>
-    <h1>Find a doctor in Portland</h1>
-    <form class="search-form">
-      <label>Enter a medical issue:</label>
-      <input id="issue-search" type="text" value="">
-      <button type="submit" name="button">Search</button>
-    </form>
-    <div class="result">
-      <h2 class="clinic-list">Try one of these clinics:</h2>
-      <div class="">
+    <div class="header">
+      <div class="brand-group">
+        <img src="img/steth-icon-2.png" alt="Stethoscope">
+        <p>Medsearch</p>
+      </div>
+      <div class="hero-text">
+        <h1>Find a doctor in:</h1>
+        <span>Portland</span><span class="blinking-cursor">|</span>
+        <hr>
+      </div>
+    </div>
+    <div class="content">
+      <form class="search-form">
+        <label>Enter a medical issue:</label>
+        <input id="issue-search" type="text" value="">
+        <button type="submit" name="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form>
+      <div class="result">
+        <h2 class="clinic-list">Try one of these clinics:</h2>
+        <div class="search-results">
 
+        </div>
       </div>
     </div>
   </body>

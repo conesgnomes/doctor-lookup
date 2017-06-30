@@ -1,0 +1,22 @@
+.header {
+  .brand-group {
+    p {
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      font-size: 1.3em;
+    }
+  }
+  .hero-text {
+    h1 {
+      font-size: 1.5em;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 300;
+    }
+    span:first-of-type {
+      font-size: 2.4em;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}
