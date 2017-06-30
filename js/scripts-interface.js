@@ -1,7 +1,12 @@
 var Doctor = require('./../js/scripts.js').doctorModule;
 
-var clinics = function(clinics) {
-  $('.result').append("<p><strong>Offices: " + clinics + "</strong></p>");
+var clinicGroup = function(clinicArray) {
+  for (i = 0; i < clinicArray.length; i++) {
+    var clinicName = clinicArray.shift();
+    var clinicWebsite = clinicArray.shift();
+    var clinicPhone = clinicArray.shift();
+    $('.clinic-list').after('<h3>' + clinicName + '</h3><ul><li><strong>Website: </strong>' + clinicWebsite + '</li><li><strong>Phone: </strong>' + clinicPhone + '</li></ul>')
+  };
 };
 
 $(function() {
@@ -13,7 +18,7 @@ $(function() {
     searchInput = $('#issue-search').val();
     $('#issue-search').val('');
 
-    newDoctor.getDoctors(searchInput, clinics);
+    newDoctor.getDoctors(searchInput, clinicGroup);
 
   });
 });
