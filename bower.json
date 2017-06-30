@@ -1,6 +1,6 @@
 {
-  "name": "project-scaffold",
-  "description": "clean directory for starting new projects",
+  "name": "doctor-lookup",
+  "description": "This is a project allowing users to search for doctors in their area using an api",
   "main": "index.js",
   "license": "ISC",
   "homepage": "https://github.com/conesgnomes/project-scaffold",
