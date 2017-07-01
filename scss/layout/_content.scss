@@ -1,5 +1,55 @@
 .content {
+  position: relative;
+  top: -60px;
+  width: 80%;
+  margin: 20px auto 0 auto;
+  padding: 20px;
+  background: rgb(255,255,255);
+  box-shadow: 0px 0px 30px grey;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    label {
+      padding: 20px 0 10px 0;
+    }
+    .search-box {display: flex;
+      margin-bottom: 20px;
+      input {
+        height: 50px;
+        width: 250px;
+        -webkit-box-shadow: 0 0 0px 1000px rgb(255,255,255) inset;
+        border: none;
+        &:focus {
+          outline: none;
+        }
+      }
+      hr {
+        width: 250px;
+      }
+      button {
+        background: none;
+        border: none;
+      }
+    }
+  }
   .result {
-    // display: none;
+    .search-results {
+      margin-left: 10px;
+    }
+    h2 {
+      margin: 10px 0;
+      display: none;
+    }
+    h3 {
+      margin: 20px 0 5px 20px;
+    }
+    ul {
+      list-style-type: none;
+      margin-left: 40px;
+    }
+    li {
+      word-wrap: break-word;
+    }
   }
 }

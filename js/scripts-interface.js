@@ -5,7 +5,7 @@ var clinicGroup = function(clinicArray) {
     var clinicName = clinicArray.shift();
     var clinicWebsite = clinicArray.shift();
     var clinicPhone = clinicArray.shift();
-    $('.search-results').after('<h3>' + clinicName + '</h3><ul><li><strong>Website: </strong>' + clinicWebsite + '</li><li><strong>Phone: </strong>' + clinicPhone.substr(0, 3) + '-' + clinicPhone.substr(3, 3) + '-' + clinicPhone.substr(6,4) + '</li></ul>')
+    $('.search-results').after('<h3 class="clinic-name">' + clinicName + '</h3><ul><li><strong>Website: </strong>' + clinicWebsite + '</li><li><strong>Phone: </strong>' + clinicPhone.substr(0, 3) + '-' + clinicPhone.substr(3, 3) + '-' + clinicPhone.substr(6,4) + '</li></ul>')
   };
 };
 
@@ -17,7 +17,7 @@ $(function() {
     e.preventDefault();
     searchInput = $('#issue-search').val();
     $('#issue-search').val('');
-    
+    $('.clinic-list').fadeIn(100);
     newDoctor.getDoctors(searchInput, clinicGroup);
 
   });
