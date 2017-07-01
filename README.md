@@ -1,13 +1,3 @@
-# Setup Instructions
-* Clone the repo
-* Open package.json, change 'name' and any other applicable fields to your new projects information.
-* Repeat the previous step for bower.json
-* If using any CSS frameworks, in index.html uncomment the vendor.min.css link in the head
-* If you plan to use bootstrap, in gulpfile.js, uncomment the labeled section on line 16, and comment out the previous line 15
-* Use npm install, and bower install to install necessary dependencies
-* Use gulp build to build js and css files to be included
-* Use gulp serve to launch the development server
-
 # _medsearch_
 
 #### Week 1 Final Project - JavaScript at Epicodus
@@ -21,7 +11,7 @@ This is a project allowing users to search for a medical condition and utilizing
 ## Screenshots of Application
 
 Landing Page
-![alt text]()
+![alt text](https://github.com/conesgnomes/doctor-lookup/blob/master/img/medsearch-landing-page.png)
 
 ## Setup/Installation Requirements
 
@@ -37,6 +27,8 @@ Landing Page
 * Use gulp serve to launch the development server
 
 OR...
+
+View on rawgit: (https://rawgit.com/conesgnomes/doctor-lookup/master/dist/index.html)
 
 ## Known Bugs
 
